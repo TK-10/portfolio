@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='カワウチタケト ポートフォリオ'>
+  <meta property='og:url' content='URL入る'>
+  <meta property='og:description' content='カワウチタケトのポートフォリオです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="カワウチタケトのポートフォリオです。" />
+  <title>カワウチタケト ポートフォリオ</title>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link href="css/reset.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/photoswipe.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/photoswipe/default-skin/default-skin.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous">
+  </script>
+  <script>
+  $(window).on('load scroll', function (){
+
+  var box = $('.fadeIn');
+  var animated = 'animated';
+  
+  box.each(function(){
+  
+    var boxOffset = $(this).offset().top;
+    var scrollPos = $(window).scrollTop();
+    var wh = $(window).height();
+
+    //画面内のどの位置で処理を実行するかで「100」の値を変更
+    if(scrollPos > boxOffset - wh + 100 ){
+      $(this).addClass(animated);
+    }
+  });
+
+});
+</script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- .header -->
+    <header class="header">
+      <h1 class="logo">
+        <span class="logo-name">Taketo Kawauchi’s</span>
+        <span class="logo-title">PORTFOLIO</span>
+        <span class="logo-text">カワウチタケト</span>
+      </h1>
+    </header>
+    <!-- /.header -->
+
+    <!-- .gnav -->
+    <nav class="gnav">
+      <ul class="gnav-list">
+        <li class="gnav-item"><a class="gnav-link" href="#works-section">WORKS</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
+        <li class="gnav-item"><a class="gnav-link" href="#learning-section">LEARNING</a></li>
+      </ul>
+    </nav>
+    <!-- /.gnav -->
+
+    <main class="content">
+
+
+      <!-- /.feature-secion -->
+
+      <!-- .works-secion -->
+      <section class="works-section section" id="works-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">WORKS</h2>
+          </div>
+          <p class="section-lead">
+            これまでの制作物です。
+          </p>
+          <div class="section-body works">
+            <div class="works-list js-my-gallery">
+              <figure class="works-item">
+                <a href="img/works/連絡掲示板L.png" data-size="980x668" class="works-link works-image-wrapper hover-action">
+                  <img class="works-image fadein lazyloaded" src="img/works/連絡掲示板L.png"
+                    data-src="img/works/company.jpg" alt="">
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">連絡掲示板</div>
+                  <div class="works-text">PHP(FW:Laravel)/MySQL/VScode/XAMPP</div>
+                  <div class="works-url"><a class="works-url-link" href="https://github.com/TK-10/ContactBoard" target="_blank">Link(Github)</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/書籍管理システム.png" data-size="980x668" class="works-link works-image-wrapper hover-action">
+                  <img class="works-image fadein lazyloaded" src="img/works/書籍管理システム.png"
+                    data-src="img/works/company.jpg" alt="">
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">書籍管理システム</div>
+                  <div class="works-text">Java(FW:SAstruts)/HTML/CSS/JavaScript/Apache Tomcat/jQuery/Oracle Database 11g/Oracle SQL Developer/eclipse</div>
+                  <div class="works-text">【工夫した実装】</div>
+                  <div class="works-text">・ヴァリデーションで値チェック</div>
+                  <div class="works-text">・EL式の利用</div> 
+                  <div class="works-text">・画像登録時に画像のパス(画像名)を取得しDBに登録、<br>表示の際はパスをキーにして画像を表示</div>
+                  <div class="works-text">・人気作品と通常作品を分けるため登録時にそれぞれキーになる値を<br>持たせDBに登録(チェックがついているかで処理を分岐)</div>
+
+
+                  <div class="works-url"><a class="works-url-link" href="https://github.com/TK-10/SA" target="_blank">Link(Github)</a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/SabiCats.png" data-size="980x668" class="works-link works-image-wrapper hover-action">
+                  <img class="works-image fadein lazyloaded" src="img/works/SabiCats.png"
+                    data-src="img/works/company.jpg" alt="">
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">SabiCats</div>
+                  <div class="works-text">PHP/HTML/CSS/WordPress</div>
+                  <div class="works-text">(レスポンシブ対応済み)</div>
+                  <div class="works-url"><a class="works-url-link" href="http://sabineko.wp.xdomain.jp/" target="_blank">Link(DemoSite)</a>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/社員交通費自動検索(Uipath).png" data-size="980x668" class="works-link works-image-wrapper hover-action">
+                  <img class="works-image fadein lazyloaded" src="img/works/社員交通費自動検索(Uipath).png"
+                    data-src="img/works/company.jpg" alt="">
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">交通費自動検索</div>
+                  <div class="works-text">RPA(Uipath)</div>
+                  <div class="works-text">【目的】社員の申請している運賃が最安か調べる</div>
+                  <div class="works-text">①Excelで交通ルートを取得</div>
+                  <div class="works-text">②ブラウザで乗り換え案内サイトを開き検索、最安料金を取得</div>
+                  <div class="works-text">③Excelに最安値を入力し社員の入力したものと比較しマッチしていなければ×をつける</div>
+                  <div class="works-url"><a class="works-url-link" href="#" target="_blank"></a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/VBA.png" data-size="980x668" class="works-link works-image-wrapper hover-action">
+                  <img class="works-image fadein lazyloaded" src="img/works/VBA.png""
+                    data-src="img/works/company.jpg" alt="">
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">ExcelVBA マクロ各処理</div>
+                  <div class="works-text">VBA/Excel</div>
+                  <div class="works-text">・大量データのマッチング処理</div>
+                  <div class="works-text">・空白一括削除</div>
+                  <div class="works-text">・データ自動取得</div>
+                  <div class="works-text">・正規表現を用いた置換</div>
+                  <div class="works-text">・RPAとの連携など</div>
+                  <div class="works-url"><a class="works-url-link" href="#" target="_blank"></a>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure class="works-item">
+                <a href="img/works/Screenshot_20200723_223454.jpg" data-size="980x668" class="works-link works-image-wrapper hover-action">
+                  <img class="works-image fadein lazyloaded" src="img/works/Screenshot_20200723_223454.jpg"
+                    <data-src="img/works/company.jpg" alt="">
+                </a>
+                <figcaption class="works-body">
+                  <div class="works-title">雨予報</div>
+                  <div class="works-text">GoogleAppScript/LINE Developer/OpenWeatherMap API</div>
+                  <div class="works-url"><a class="works-url-link" href="https://github.com/TK-10/RainForecast" target="_blank">Link(Github)</a>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.works-secion -->
+
+      <!-- .about-secion -->
+      <section class="about-section section" id="about-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">ABOUT</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              カワウチタケトと申します。
+            </p>
+          </div>
+          <div class="section-body about">
+            <div class="about-item">
+              <div class="about-image-wrapper">
+                <img class="about-image" src="img/profile/irasuto.png" alt=""></div>
+              <div class="about-body">
+                <p>名前：Taketo Kawauchi</p>
+                <p>出身：大阪府（現在も在住)</p>
+                <p>
+                  <ul>
+                    <li>【実務経験】</li>
+                    <li>・生命保険会社の社内システム開発(言語:COBOL 担当フェーズ:SE・PG)</li>
+                    <li>・電子カルテシステムの保守(言語:VB6 担当フェーズ:PG)</li>
+                    <li>・アパレルのECサイトシステム開発[OJT含む](言語:Java 担当フェーズ:PG)</li>
+                    <li>・RPAで業務効率化シナリオ開発(SE・シナリオ作成)</li>
+                    <li>・ExcelVBA マクロを用いた業務シート作成(言語:VBA 担当フェーズ:SE・PG)</li>
+                    <li>・自社ECサイト、グループ会社サイトの改修(言語:PHP 担当フェーズ:PG)</li>
+                   </ul>
+                 </p>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.about-secion -->
+
+      <!-- .skill-secion -->
+      <section class="skill-section section" id="skill-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">SKILL</h2>
+          </div>
+          <div class="section-lead">
+          </div>
+          <div class="section-body skill">
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/HTML_CSS.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">HTML5/CSS3</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                  
+                    </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/JS.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">JavaScript</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                   社内ツール作成などの実務経験有り
+                    </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/JQ.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">JQuery</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate2"></div>
+                  </div>
+                  <p>
+                   
+                    </p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">	
+                  <img class="skill-image" src="img/skill/RPA.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">RPA</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    Uipath、アシロボ、CELFでの実務経験有り</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/OCR.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">AI-OCR</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    RPAとの連携で実務経験有り</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/COBOL.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">COBOL</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    TSO端末での製造、JCLを使用した検証など実務経験有り</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/PHP.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">PHP</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                    自社ECサイト、グループ会社サイトの改修での実務経験有り(FW:Laravel)</p>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/WP.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">WordPress</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate3"></div>
+                  </div>
+                  <p>
+                  個人製作で使用
+                   </p>
+                </div>
+              </div>             
+              <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/Java.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">Java</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    ECサイト開発で実務経験有り(FW:SAstruts)</p>
+                </div>
+              </div>
+               <div class="skill-item">
+                <div class="skill-image-wrapper">
+                  <img class="skill-image" src="img/skill/VBA.png" alt="">
+                </div>
+                <div class="skill-body">
+                  <h3 class="skill-title">VBA</h3>
+                  <div class="skill-rating rating">
+                    <div class="rate rate4"></div>
+                  </div>
+                  <p>
+                    RPAシナリオとの連携、業務シート作成などの実務経験有り</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      <!-- .learning-secion -->
+      <section class="learning-section section" id="learning-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">Learning</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              学習中
+            </p>
+          </div>
+          <div class="section-body about">
+            <div class="about-item">
+              <div class="about-image-wrapper">
+                <img class="about-image" src="img/profile/勉強アイコン.jpeg" alt=""></div>
+              <div class="about-body">
+                <p>
+                  <ul>
+                    <li>・AWS（EC2・S3・RDS・Lambda・CloudWatch）</li>
+                    <li>・Docker</li>
+                    <li>・PHP+FW(Laravel・CakePHP)</li>
+                    <li>・Java+FW(Spring)</li>
+                   </ul>
+                 </p>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.learning-secion -->
+
+<div class="box fadeIn">
+      <!-- .contact-secion -->
+      <section class="contact-section section" id="contact-section">
+        <div class="inner">
+          <div class="section-heading">
+            <h2 class="heading-primary">Thank you for viewing my works.</h2>
+          </div>
+          <div class="section-lead">
+            <p>
+              最後までご覧いただきありがとうございました。
+            </p>
+          </div>
+</div>
+      </section>
+      <!-- /.contact-secion -->
+
+    </main>
+
+    <!-- .footer -->
+    <footer class="footer">
+      <div id="js-page-top" class="page-top">
+        トップへもどる
+      </div>
+      <div class="inner">
+        <p class="copyright">Copyright&copy;Taketo Kawauchi. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- /.footer -->
+
+  </div>
+
+  <!-- 下記はPhotoswipeプラグイン用 -->
+  <!-- Root element of PhotoSwipe. Must have class pswp. -->
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+      <!-- Container that holds slides.
+              PhotoSwipe keeps only 3 of them in the DOM to save memory.
+              Don't modify these 3 pswp__item elements, data is added later on. -->
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+      <div class="pswp__ui pswp__ui--hidden">
+
+        <div class="pswp__top-bar">
+
+          <!--  Controls are self-explanatory. Order can be changed. -->
+
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+
+
+          <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+          <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+          <!-- element will get class pswp__preloader--active when preloader is running -->
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+        </button>
+
+        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+        </button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/photoswipe/photoswipe.min.js"></script>
+  <script src="js/photoswipe/photoswipe-ui-default.js"></script>
+  <script src="js/photoswipe/photoswipe-setup.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
