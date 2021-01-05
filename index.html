@@ -72,6 +72,11 @@ $(window).on('load scroll', function(){
       });
 </script>
 </head>
+<!-- Loading -->
+<div class="loader-wrap">
+  <div class="loader"><img src="img/810.gif"><p><font size="4">Loading...</font></p></div>
+</div>
+<!-- /Loading -->
 <body style="background: url('./img/white0004.png');>
   <div class="wrapper">
     <!-- .header -->
@@ -434,7 +439,7 @@ $(window).on('load scroll', function(){
         </div>
       </section>
       <!-- /.learning-secion -->
-<div class="box fadeIn">
+    <div class="box fadeIn">
       <!-- .contact-secion -->
       <section class="contact-section section" id="contact-section">
         <div class="inner">
@@ -446,7 +451,7 @@ $(window).on('load scroll', function(){
               最後までご覧いただきありがとうございました。
             </p>
           </div>
-</div>
+    </div>
       </section>
       <!-- /.contact-secion -->
 
@@ -534,6 +539,22 @@ $(window).on('load scroll', function(){
     　maxSpeed : 2, //最大速度
     　image : "img/3068.png", //ここで画像を指定
     });
+
+  //Loadeing画面制御処置
+
+$(function(){
+	var loader = $('.loader-wrap');
+
+	//ページの読み込みが完了したらアニメーションを非表示
+	$(window).on('load',function(){
+		  loader.fadeOut();
+	});
+
+	//ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
+	setTimeout(function(){
+		loader.fadeOut();
+	},3000);
+});
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/photoswipe/photoswipe.min.js"></script>
